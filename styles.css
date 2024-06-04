@@ -111,7 +111,7 @@ body, html {
 .phone-images img {
     width: 100%;
     height: auto;
-    max-width: 500px; /* Increased the size of the image */
+    max-width: 500px; 
 }
 
 .achievement {
@@ -135,7 +135,6 @@ body, html {
     font-weight: bold;
 }
 
-/* Features Section CSS */
 .features-section {
     background-color: #ffffff;
     padding: 50px 20px;
@@ -177,7 +176,7 @@ body, html {
 .features-left img {
     width: 100%;
     height: auto;
-    max-width: 400px; /* Increased the size of the image */
+    max-width: 400px;
 }
 
 .features-right {
