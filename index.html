@@ -11,7 +11,13 @@
     <div class="container">
         <header class="header">
             <div class="logo">uifry<span class="trademark">™</span></div>
-            <nav>
+            <button class="download-btn">Download</button>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav">
                 <ul class="nav-links">
                     <li>Home</li>
                     <li>About Us</li>
@@ -19,7 +25,6 @@
                     <li>Features</li>
                 </ul>
             </nav>
-            <button class="download-btn">Download</button>
         </header>
         <main class="main-content">
             <div class="text-content">
@@ -44,8 +49,6 @@
                 <p>Best Finance App On Playstore</p>
             </div>
         </div>
-
-        <!-- New Features Section Start -->
         <section class="features-section">
             <div class="features-content">
                 <div class="features-left">
@@ -81,5 +84,12 @@
             </div>
         </section>
     </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('nav-open');
+        }
+    </script>
 </body>
 </html>

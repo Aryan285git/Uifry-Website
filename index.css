@@ -31,6 +31,12 @@ body, html {
     vertical-align: super;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -256,6 +262,7 @@ body, html {
     .nav-links {
         flex-direction: column;
         gap: 15px;
+        display: none;
     }
 
     .nav-links li {
@@ -288,5 +295,22 @@ body, html {
 
     .feature-text p {
         font-size: 1em;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+    }
+
+    .nav.nav-open .nav-links {
+        display: flex;
     }
 }
